@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -55,5 +56,14 @@ public class PlayerMovement : MonoBehaviour
         }
 
         _characterController.Move(_direction * Time.deltaTime);
+    }
+
+    private void OnControllerColliderHit(ControllerColliderHit hit) 
+    {
+        Debug.Log(hit.gameObject.name);
+        if(hit.transform.tag == "Obstacle")
+        {
+            SceneManager.LoadScene("GameOver");
+        }
     }
 }
