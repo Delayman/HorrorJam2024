@@ -24,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     {
         _direction.z = _moveSpeed;
         _moveSpeed += 0.2f * Time.deltaTime;
+        
 
         if(Input.GetKeyDown(KeyCode.RightArrow))
         {
