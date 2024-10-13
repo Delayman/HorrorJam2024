@@ -47,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
         if(transform.position != targetPos) 
         {
             Vector3 diff = targetPos - transform.position;
-            Vector3 moveDir = diff.normalized * 10f * Time.deltaTime;
+            Vector3 moveDir = diff.normalized * 20f * Time.deltaTime;
             if(moveDir.sqrMagnitude < diff.magnitude)
             {
                 _characterController.Move(moveDir);
