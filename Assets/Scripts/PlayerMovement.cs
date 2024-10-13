@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
     private void Update() 
     {
         _direction.z = _moveSpeed;
-        _moveSpeed += 0.2f * Time.fixedDeltaTime;
+        _moveSpeed += 0.2f * Time.deltaTime;
 
         if(Input.GetKeyDown(KeyCode.RightArrow))
         {
