@@ -156,6 +156,7 @@ MonoBehaviour:
   - {fileID: 9095111051493749502, guid: f56bbbc4005673c498f7c2118594f256, type: 3}
   - {fileID: 5847019924856891814, guid: fb387bd6a53bba046a008e5e9f318eb7, type: 3}
   - {fileID: 7503408761971239223, guid: 779322f19c4ce824389160181ebf4fd8, type: 3}
+  - {fileID: 723649159972361916, guid: 1c1e828302631f841b737d8483688674, type: 3}
   railwayTitlePrefabs:
   - {fileID: 7076804519178652650, guid: 24a938ae149b4334abf621046abe6ed4, type: 3}
   zSpawn: 0
@@ -651,7 +652,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.3345788, y: -6.339646e-16, z: 7.015681e-16, w: 0.9423678}
+  m_LocalRotation: {x: 0.33457884, y: -0.000000011633088, z: 0.000000004130219, w: 0.9423678}
   m_LocalPosition: {x: 0, y: 7.8, z: -63.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1044,7 +1045,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1160140142}
-  m_LocalRotation: {x: 0.3345788, y: -6.339646e-16, z: 7.015681e-16, w: 0.9423678}
+  m_LocalRotation: {x: 0.33457884, y: -0.000000011633088, z: 0.000000004130219, w: 0.9423678}
   m_LocalPosition: {x: 0, y: 7.8, z: -63.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
