@@ -62,7 +62,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnControllerColliderHit(ControllerColliderHit hit) 
     {
-        Debug.Log(hit.gameObject.name);
+        // Debug.Log(hit.gameObject.name);
         if(hit.transform.tag == "Obstacle")
         {
             SceneManager.LoadScene("GameOver");

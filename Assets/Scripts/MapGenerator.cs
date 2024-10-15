@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class MapGenerator : MonoBehaviour
 {
+    public GameObject startTilePrefab;
     public GameObject[] titlePrefabs;
     public GameObject[] railwayTitlePrefabs;
+    public GameObject[] oldVillageTitlePrefabs;
+    public GameObject endTitlePrefab;
 
     public float zSpawn = 0f;
     public float tileLength = 30f;
@@ -15,9 +18,10 @@ public class MapGenerator : MonoBehaviour
 
     public int lv1ProgressionValue;
     public int lv2ProgressionValue;
+    public int lv3ProgressionValue;
 
     public Transform player;
-    private int CurrentLevel = 1;
+    private int CurrentLevel = 0;
     private int tileSpawn = 0;
 
     private void Start()
@@ -27,6 +31,8 @@ public class MapGenerator : MonoBehaviour
             if(i == 0)
             {
                 SpawnMap(0);
+                CurrentLevel = 1;
+                
             }else
             {
                 SpawnMap(Random.Range(0, titlePrefabs.Length));
@@ -38,16 +44,27 @@ public class MapGenerator : MonoBehaviour
     {
         if(player.position.z - tileDeletionDelay  > zSpawn - (tileCount * tileLength))
         {
-            Debug.Log("SpawnNum " + tileSpawn);
+            if(CurrentLevel == 5) return;
+
+            // Debug.Log("SpawnNum " + tileSpawn);
             if(tileSpawn >= lv1ProgressionValue + tileCount) {CurrentLevel = 2;}
             if(tileSpawn >= lv2ProgressionValue + lv1ProgressionValue + tileCount) {CurrentLevel = 3;}
+            if(tileSpawn >= lv3ProgressionValue + lv2ProgressionValue + lv1ProgressionValue + tileCount) {CurrentLevel = 4;}
+            //end value
+
+            if(CurrentLevel == 4)
+            {
+                Instantiate(endTitlePrefab,transform.forward * zSpawn, transform.rotation);
+                CurrentLevel++;
+                return;
+            }
+            
 
             switch(CurrentLevel)
             {
                 case 1: SpawnMap(Random.Range(0, titlePrefabs.Length)); break;
                 case 2: SpawnMap(Random.Range(0, railwayTitlePrefabs.Length)); break;
-                //Loop first
-                case 3: SpawnMap(Random.Range(0, titlePrefabs.Length)); break;
+                case 3: SpawnMap(Random.Range(0, oldVillageTitlePrefabs.Length)); break;
             }
 
             DeleteTile();
@@ -61,10 +78,10 @@ public class MapGenerator : MonoBehaviour
 
         switch(CurrentLevel)
         {
+            case 0: tile = Instantiate(startTilePrefab,transform.forward * zSpawn, transform.rotation); activeTiles.Add(tile); break;
             case 1: tile = Instantiate(titlePrefabs[_index],transform.forward * zSpawn, transform.rotation); activeTiles.Add(tile); break;
             case 2: tile = Instantiate(railwayTitlePrefabs[_index],transform.forward * zSpawn, transform.rotation); activeTiles.Add(tile); break;
-            //Loop first
-            case 3: tile = Instantiate(titlePrefabs[_index],transform.forward * zSpawn, transform.rotation); activeTiles.Add(tile); break;
+            case 3: tile = Instantiate(oldVillageTitlePrefabs[_index],transform.forward * zSpawn, transform.rotation); activeTiles.Add(tile); break;
         }
 
         zSpawn += tileLength;
