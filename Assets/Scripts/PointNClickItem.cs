@@ -5,6 +5,8 @@ using UnityEngine;
 public class PointNClickItem : MonoBehaviour
 {
     public GameObject[] itemDataUi;
+    public GameObject itemFrame;
+    public GameObject itemFrameBtn;
 
     public void OnClickItem_1()
     {
@@ -31,7 +33,9 @@ public class PointNClickItem : MonoBehaviour
 
     public void OnClickItem_Sp()
     {
-        itemDataUi[4].SetActive(true);
+        Debug.Log("huh");
+        itemFrame.GetComponent<Rigidbody>().useGravity = true;
+        itemFrameBtn.SetActive(false);
     }
 
     public void OnClickOk()
