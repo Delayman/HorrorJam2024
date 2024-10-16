@@ -9,6 +9,7 @@ public class PointNClickItem : MonoBehaviour
     public void OnClickItem_1()
     {
         itemDataUi[0].SetActive(true);
+        itemDataUi[0].GetComponent<Animator>().SetBool("IsUp", true);
     }
 
     public void OnClickItem_2()
@@ -37,7 +38,7 @@ public class PointNClickItem : MonoBehaviour
     {
         foreach (var item in itemDataUi)
         {
-            item.SetActive(false);
+            item.GetComponent<Animator>().SetBool("IsUp", false);
         }
     }
 }
