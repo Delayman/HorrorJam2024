@@ -94,9 +94,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4917724819848201366}
     m_Modifications:
+    - target: {fileID: 428354848081779816, guid: c72a673d93e37b04a95de4917cee158d, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1185166021721253683, guid: c72a673d93e37b04a95de4917cee158d, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1690572398647887062, guid: c72a673d93e37b04a95de4917cee158d, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 3744547650054197815, guid: c72a673d93e37b04a95de4917cee158d, type: 3}
       propertyPath: m_Name
       value: train
+      objectReference: {fileID: 0}
+    - target: {fileID: 3857025362388462036, guid: c72a673d93e37b04a95de4917cee158d, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4088316916290111629, guid: c72a673d93e37b04a95de4917cee158d, type: 3}
       propertyPath: m_RootOrder
@@ -141,6 +157,10 @@ PrefabInstance:
     - target: {fileID: 4088316916290111629, guid: c72a673d93e37b04a95de4917cee158d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8309363812369342248, guid: c72a673d93e37b04a95de4917cee158d, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
