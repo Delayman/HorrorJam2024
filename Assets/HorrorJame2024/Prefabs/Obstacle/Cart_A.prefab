@@ -153,6 +153,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: horse brown
       objectReference: {fileID: 0}
+    - target: {fileID: 8299884308880768812, guid: 297fc0831e599c64784f54a93fe3eae7, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 8675283501238281622, guid: 297fc0831e599c64784f54a93fe3eae7, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -215,6 +219,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8406003898778903519}
     m_Modifications:
+    - target: {fileID: 862285793886438312, guid: 5d557bd3ae5bf40478e16f027cb6dc22, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 959326643680694207, guid: 5d557bd3ae5bf40478e16f027cb6dc22, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 2614505446521014619, guid: 5d557bd3ae5bf40478e16f027cb6dc22, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4295849850133143985, guid: 5d557bd3ae5bf40478e16f027cb6dc22, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 7483719221639028883, guid: 5d557bd3ae5bf40478e16f027cb6dc22, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -262,6 +282,10 @@ PrefabInstance:
     - target: {fileID: 7822843089952635433, guid: 5d557bd3ae5bf40478e16f027cb6dc22, type: 3}
       propertyPath: m_Name
       value: cart
+      objectReference: {fileID: 0}
+    - target: {fileID: 8697729774915200356, guid: 5d557bd3ae5bf40478e16f027cb6dc22, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

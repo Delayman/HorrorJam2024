@@ -94,6 +94,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1440762165940980382}
     m_Modifications:
+    - target: {fileID: 1999653908520891897, guid: 9326ab5cc5d909a4db0f4f584db07282, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 2118785849327598062, guid: 9326ab5cc5d909a4db0f4f584db07282, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7000614621258461324, guid: 9326ab5cc5d909a4db0f4f584db07282, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7531089343151395637, guid: 9326ab5cc5d909a4db0f4f584db07282, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7537736151649466811, guid: 9326ab5cc5d909a4db0f4f584db07282, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 8641497313738675906, guid: 9326ab5cc5d909a4db0f4f584db07282, type: 3}
       propertyPath: m_RootOrder
       value: -1

@@ -94,9 +94,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8438879596296457496}
     m_Modifications:
+    - target: {fileID: 175141963007519597, guid: c06aa0ab30720304b8e1941b743df0bb, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 390311492104341640, guid: c06aa0ab30720304b8e1941b743df0bb, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 771101221727122783, guid: c06aa0ab30720304b8e1941b743df0bb, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1724147407616610358, guid: c06aa0ab30720304b8e1941b743df0bb, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 2444322821583412841, guid: c06aa0ab30720304b8e1941b743df0bb, type: 3}
       propertyPath: m_Name
       value: passenger wagon
+      objectReference: {fileID: 0}
+    - target: {fileID: 2853695267290162570, guid: c06aa0ab30720304b8e1941b743df0bb, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 3071501173714076883, guid: c06aa0ab30720304b8e1941b743df0bb, type: 3}
       propertyPath: m_RootOrder
@@ -141,6 +161,10 @@ PrefabInstance:
     - target: {fileID: 3071501173714076883, guid: c06aa0ab30720304b8e1941b743df0bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4375034400933575555, guid: c06aa0ab30720304b8e1941b743df0bb, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
