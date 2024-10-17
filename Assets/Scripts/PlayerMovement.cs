@@ -7,6 +7,8 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField]private float _moveSpeed;
     [SerializeField]private float _laneMovedDistance = 2;
+
+    [SerializeField]private Animator animator;
     
 
     private CharacterController _characterController;
@@ -67,5 +69,19 @@ public class PlayerMovement : MonoBehaviour
         {
             SceneManager.LoadScene("GameOver");
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "End")
+        {
+            animator.SetBool("isEnd", true);
+            Invoke("MoveToEndScene", 1f);
+        }
+    }
+
+    private void MoveToEndScene()
+    {
+        SceneManager.LoadScene("GameWin");
     }
 }

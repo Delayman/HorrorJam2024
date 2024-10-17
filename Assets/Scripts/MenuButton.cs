@@ -10,9 +10,13 @@ public class MenuButton : MonoBehaviour
         SceneManager.LoadScene("GameScene");
     }
 
+    public void OnClickBack()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
     public void OnClickEndGame()
     {
-        Debug.Log("Boo!");
-        // SceneManager.LoadScene("GameScene");
+        Application.Quit();
     }
 }

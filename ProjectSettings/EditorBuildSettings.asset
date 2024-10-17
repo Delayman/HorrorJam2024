@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 1d85a300aa3f49642a17848b847b3bb2
+  - enabled: 1
+    path: Assets/Scenes/GameWin.unity
+    guid: b0514360549fd4144be0d507a0bff4e0
+  - enabled: 1
+    path: Assets/Scenes/fakeLoadScreenlol.unity
+    guid: 73b50035074d06a46b8e2b72ca322418
   m_configObjects: {}
