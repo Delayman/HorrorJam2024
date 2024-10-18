@@ -1,18 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Scenemanager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void Start() 
     {
-        
+        Invoke("ToMainMenu",19f);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void ToMainMenu()
     {
-        
+        SceneManager.LoadSceneAsync("MainMenu");
     }
 }
