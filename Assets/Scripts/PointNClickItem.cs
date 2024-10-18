@@ -43,8 +43,8 @@ public class PointNClickItem : MonoBehaviour
 
     public void OnClickItem_Key()
     {
-        itemDataUi[5].SetActive(true);
-        itemDataUi[5].GetComponent<Animator>().SetBool("IsUp", true);
+        // itemDataUi[5].SetActive(true);
+        // itemDataUi[5].GetComponent<Animator>().SetBool("IsUp", true);
         isPickUpKey = true;
         key.SetActive(false);
     }
