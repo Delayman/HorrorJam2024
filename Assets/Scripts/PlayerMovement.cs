@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]private float _laneMovedDistance = 2;
 
     [SerializeField]private Animator animator;
+    [SerializeField]public AudioSource whipSfx;
     
 
     private CharacterController _characterController;
@@ -25,17 +26,24 @@ public class PlayerMovement : MonoBehaviour
     private void Update() 
     {
         _direction.z = _moveSpeed;
-        _moveSpeed += 0.2f * Time.deltaTime;
+        
+        if(_moveSpeed <= 20)
+        {
+            _moveSpeed += 0.2f * Time.deltaTime;
+        }
+        
         
 
         if(Input.GetKeyDown(KeyCode.RightArrow))
         {
             if(currentLane < 2) {currentLane++;}
+            whipSfx.Play();
         }
 
         if(Input.GetKeyDown(KeyCode.LeftArrow))
         {
             if(currentLane > 0) {currentLane--;}
+            whipSfx.Play();
         }
 
         Vector3 targetPos = transform.position.z * transform.forward + transform.position.y * transform.up;
