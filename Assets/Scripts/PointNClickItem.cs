@@ -44,7 +44,6 @@ public class PointNClickItem : MonoBehaviour
 
     public void OnClickItem_Key()
     {
-
         isPickUpKey = true;
         key.SetActive(false);
     }
