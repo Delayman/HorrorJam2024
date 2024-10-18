@@ -183,11 +183,11 @@ MonoBehaviour:
   endTitlePrefab: {fileID: 910188578168138467, guid: 1bb14ad91189e03449fbaa65fe1587a4, type: 3}
   zSpawn: 0
   tileLength: 105
-  tileCount: 2
+  tileCount: 4
   tileDeletionDelay: 55
   lv1ProgressionValue: 1
-  lv2ProgressionValue: 1
-  lv3ProgressionValue: 1
+  lv2ProgressionValue: 5
+  lv3ProgressionValue: 5
   player: {fileID: 1096496633}
 --- !u!4 &52027489
 Transform:
@@ -735,7 +735,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.3345788, y: 6.339646e-16, z: -7.015681e-16, w: 0.9423678}
+  m_LocalRotation: {x: 0.3345788, y: -6.339646e-16, z: 7.015681e-16, w: 0.9423678}
   m_LocalPosition: {x: 0, y: 7.8, z: -63.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -984,7 +984,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1160140142}
-  m_LocalRotation: {x: 0.3345788, y: 6.339646e-16, z: -7.015681e-16, w: 0.9423678}
+  m_LocalRotation: {x: 0.3345788, y: -6.339646e-16, z: 7.015681e-16, w: 0.9423678}
   m_LocalPosition: {x: 0, y: 7.8, z: -63.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
